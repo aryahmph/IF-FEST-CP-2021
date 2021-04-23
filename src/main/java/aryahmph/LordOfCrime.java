@@ -12,7 +12,7 @@ public class LordOfCrime {
             names[i] = scanner.next();
         }
 
-        String nameResult = LordOfCrimeSolution.lordOfCrime(names);
+        String[] nameResult = LordOfCrimeSolution.lordOfCrime(names);
         System.out.println(nameResult);
     }
 

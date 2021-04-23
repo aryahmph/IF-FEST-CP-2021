@@ -4,16 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LordOfCrimeSolution {
-    public static String lordOfCrime(String[] names) {
+    public static String[] lordOfCrime(String[] names) {
         int namesLen = names.length;
 
         // Register array into HahsMap
         Map<String, Integer> map = new HashMap<>(namesLen);
-        for (int i = 0; i < namesLen; i++) {
-            if (map.containsKey(names[i])) {
-                map.put(names[i], map.get(names[i]) + 1);
+        for (String name : names) {
+            if (map.containsKey(name)) {
+                map.put(name, map.get(name) + 1);
             } else {
-                map.put(names[i], 1);
+                map.put(name, 1);
             }
         }
 
@@ -29,6 +29,6 @@ public class LordOfCrimeSolution {
             }
         }
 
-        return maxKey;
+        return new String[]{maxKey, Integer.toString(map.get(maxKey))};
     }
 }
