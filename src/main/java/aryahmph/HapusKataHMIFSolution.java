@@ -20,8 +20,17 @@ public class HapusKataHMIFSolution {
                         if (stack.peekLast() == 'H') {
                             stack.pollLast();
                             deletedCount++;
+                        } else {
+                            stack.offerLast('M');
+                            stack.offerLast('I');
+                            stack.offerLast('F');
                         }
+                    } else {
+                        stack.offerLast('I');
+                        stack.offerLast('F');
                     }
+                } else {
+                    stack.offerLast('F');
                 }
             }
         }

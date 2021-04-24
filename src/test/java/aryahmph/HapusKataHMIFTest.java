@@ -25,4 +25,36 @@ public class HapusKataHMIFTest {
         assertEquals(2, deleted);
     }
 
+    @Test
+    @Timeout(value = 500, unit = TimeUnit.MILLISECONDS)
+    void testCase3() {
+        String word = "HMIFFSHMHMIFIFSADAHMIF";
+        int deleted = HapusKataHMIFSolution.hapusKataHMIF(word);
+        assertEquals(4, deleted);
+    }
+
+    @Test
+    @Timeout(value = 500, unit = TimeUnit.MILLISECONDS)
+    void testCase4() {
+        String word = "DSALIHWFWMIFHWIFSHFHUEHMIF";
+        int deleted = HapusKataHMIFSolution.hapusKataHMIF(word);
+        assertEquals(1, deleted);
+    }
+
+    @Test
+    @Timeout(value = 500, unit = TimeUnit.MILLISECONDS)
+    void testCase5() {
+        String word = "HHHHHHHHHHMIFMIFMIFMIFMIFMIFMIFMIFMIFMIF";
+        int deleted = HapusKataHMIFSolution.hapusKataHMIF(word);
+        assertEquals(10, deleted);
+    }
+
+    @Test
+    @Timeout(value = 500, unit = TimeUnit.MILLISECONDS)
+    void testCase6() {
+        String word = "FHMIHMHMIFFIFFFHMIFF";
+        int deleted = HapusKataHMIFSolution.hapusKataHMIF(word);
+        assertEquals(2, deleted);
+    }
+
 }
