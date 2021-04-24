@@ -7,9 +7,9 @@ Untuk fungsi main dan solusi soal terdapat pada folder main, sedangkan untuk tes
 
 ## Library
 Untuk library yang digunakan bisa dilihat pada file pom.xml, lebih detail nya sebagai berikut : 
-#### Java v16
+#### 1. Java v16
 Versi java yang digunakan adalah versi 16, harap update!
-#### Apache Maven
+#### 2. Apache Maven
 Untuk mengelola projek agar rapih.
-#### JUnit 5.7
+#### 3. JUnit 5.7
 Untuk melakukan unit test pada setiap soal.
