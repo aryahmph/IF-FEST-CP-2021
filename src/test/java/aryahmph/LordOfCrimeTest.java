@@ -49,4 +49,13 @@ public class LordOfCrimeTest {
         assertArrayEquals(new String[]{"William", "40"}, res);
 
     }
+
+    @Test
+    void testLordofCrime5() {
+        String[] names = {"Ciel", "Charles", "William", "William", "Ciel", "William", "Ciel", "Charles", "William", "Ciel", "Ciel", "Charles", "Charles", "Charles", "Ciel", "William", "Charles", "William", "Ciel", "William", "Charles", "Charles", "Charles", "William", "Ciel", "Ciel", "William", "Ciel", "Charles", "Charles"};
+        // Ciel =  10, Charles = 11, William = 9
+        String[] res = LordOfCrimeSolution.lordOfCrime(names);
+
+        assertArrayEquals(new String[]{"Charles", "11"}, res);
+    }
 }
